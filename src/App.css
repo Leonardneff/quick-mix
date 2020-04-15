@@ -17,7 +17,10 @@
   color: #000;
 }
 
-.Login-button {
+.auth-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
   border-radius: 57px;
   margin: 2% 0;
   padding: 10px 20px;
@@ -25,4 +28,64 @@
   font-family: 'Passion One';
   color: #fff;
   background-color: #000;
+}
+.auth-button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topic-list-item {
+  margin: 30px 30px 30px 0;
+  font-family: 'Passion One';
+}
+
+.topic-list-item a {
+  transition-property: all;
+  transition-duration: 1s;
+  display: block;
+  width: 200px;
+  height: 200px; 
+  color: #fff;
+  background-color: #000;
+  border-radius: 120px;
+  text-decoration: none;
+  font-size: 45px;
+  text-align: center;
+  padding: 20px;
+  display: grid;
+}
+
+.topic-list-item span {
+  transition-property: all;
+  transition-duration: 1s;
+  color: rgba(0, 0, 0, 0);
+}
+
+.topic-list-item i {
+  font-size: 90px;
+}
+
+.topic-list-item i, .topic-list-item span {
+  grid-row: 1;
+  grid-column: 1;
+  margin: 0 auto;
+  line-height: 200px; /*calculate current height of the parent element*/
+}
+
+.topic-list-item a:hover {
+  background-color: rgba(0, 0,0, 0.2); 
+}
+
+.topic-list-item a:hover span{
+  color: rgba(0, 0, 0, 1);
+}
+
+.topic-list-item a:hover i{
+  transition-property: all;
+  transition-duration: 1s;
 }
