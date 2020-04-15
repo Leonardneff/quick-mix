@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.svg';
 import '../App.css';
+import AuthButton from '../containers/AuthButton'
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
       <p>
           Mix your playlist based on one of three predefined categories matching with your personal taste.
       </p>
-      <button className="Login-button" href="#">
-        Login to Spotify
-      </button>
+      <AuthButton />
       </div>
     </div>
   );
